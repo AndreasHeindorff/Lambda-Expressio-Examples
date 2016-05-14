@@ -3,7 +3,7 @@ package Collections;
 import java.util.Arrays;
 import java.util.List;
 
-public class CollectionSorting {
+public class CollectionLambda {
 
     final private static List<Person> people = Arrays.asList(
             new Person("Andreas", 21),
