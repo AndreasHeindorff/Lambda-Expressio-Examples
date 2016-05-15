@@ -11,3 +11,4 @@ Used for Java Advanced Elective Subject @ CPHBusiness Lyngby
 8. https://dzone.com/articles/why-we-need-lambda-expressions
 9. https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html
 10. http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
+11. http://www.codejava.net/java-core/the-java-language/java-8-lambda-runnable-example
