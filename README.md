@@ -10,3 +10,4 @@ http://www.dreamsyssoft.com/java-8-lambda-tutorial/filter-tutorial.php
 http://www.developer.com/java/start-using-java-lambda-expressions.html
 https://dzone.com/articles/why-we-need-lambda-expressions
 https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html
+http://viralpatel.net/blogs/lambda-expressions-java-tutorial/
