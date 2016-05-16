@@ -56,21 +56,20 @@ public class LambdaStreams {
     }
 
     void filterSalary() {
-        System.out.println("Show PHP programmers that earn more than $1,400:");
+        System.out.println("Show C#.NET programmers that earn more than $1,400:");
         dotNetProgrammers.stream()
                 .filter((p) -> (p.getSalary() > 1400))
                 .forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
     }
 
     void Filters() {
-        System.out.println("Show female PHP programmers that earn more than $1,400 and are older than 24 years:");
+        System.out.println("Show female C#.NET programmers that earn more than $1,400 and are older than 24 years:");
         dotNetProgrammers.stream()
                 .filter(ageFilter)
                 .filter(salaryFilter)
                 .filter(genderFilter)
                 .forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
-        // Reuse filters
         System.out.println("Show female Java programmers older than 24 years:");
         javaProgrammers.stream()
                 .filter(ageFilter)
@@ -129,7 +128,7 @@ public class LambdaStreams {
     }
 
     void Collect() {
-        System.out.println("Get PHP programmers first name to String:");
+        System.out.println("Get C#.NET programmers first name to String:");
         String dotNetDevelopers = dotNetProgrammers
                 .stream()
                 .map(Person::getFirstName)
@@ -139,12 +138,6 @@ public class LambdaStreams {
         Set<String> javaDevFirstName = javaProgrammers
                 .stream()
                 .map(Person::getFirstName)
-                .collect(toSet());
-
-        System.out.println("Get Java programmers last name to TreeSet:");
-        Set<String> javaDevLastName = javaProgrammers
-                .stream()
-                .map(Person::getLastName)
                 .collect(toSet());
     }
 
@@ -168,6 +161,21 @@ public class LambdaStreams {
         System.out.println("Lowest number in List : " + stats.getMin());
         System.out.println("Sum of all numbers : " + stats.getSum());
         System.out.println("Average of all numbers : " + stats.getAverage());
+    }
+    
+    public static void main(String[] args) {
+        LambdaStreams ls = new LambdaStreams();
+        ls.forEachIterate();
+        ls.increaseSalary();
+        ls.filterSalary();
+        ls.Filters();
+        ls.Limit();
+        ls.Sorting();
+        ls.MinMax();
+        ls.Collect();
+        ls.Parallel();
+        ls.SummaryStatistics();
+        
     }
 
 }
